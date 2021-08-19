@@ -3,10 +3,10 @@ import React from 'react';
 class Time extends React.Component{
 
     constructor(props){
-        super(props);
+        super();
         this.state = {
             interval: setInterval(()=>{
-                console.log('tick');
+                
                 this.setState({
                     time: new Date().toLocaleTimeString()
                 })
